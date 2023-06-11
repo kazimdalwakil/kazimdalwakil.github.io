@@ -1,80 +1,88 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: Football Club Management System
+description: A database management system Project <br> Oct. 2021 – Jan. 2022
+img: assets/img/cse370_0.jpg
+redirect: 
+importance: 5
+category: Academic
 ---
+In this project we tried to build a website for the management of a football club. The website has two views, User view and Admin View. Users can buy jerseys, merchandise etc from the club shop. A lot of features are also available such as searching a product, sorting by price etc. Users can also see their purchase history. Admin of the website can update, add, delete a product from the club shop. He can also add, update and delete a player, board member from the database. 
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+There are other features too. Such as users can see the board members, details of the players of the club. Moreover, Board members can login as admin and can inspect the website and can see who is managing which club shop. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+The web-app project was created for the completion of the Database Management System (CSE370) course at BRAC University. The technologies used for building this project are 
+- HTML
+- CSS 
+- PHP 
+- MySQL
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This was a Group Project. The other contributors were 
+- <a href="https://www.linkedin.com/in/mdmustakinalam/">MD. Mustakin Alam</a>
+- <a href="https://www.linkedin.com/in/sababa-rahman-meem-6180601b0/">Sababa Rahman Meem</a>
+- <a href="https://www.linkedin.com/in/kausar04/">Md. Kausar Islam Bidhan</a>
+- Ishraq Ahmed Esha.
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/cse370_1.jpg" title="Network Topology" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/cse370_2.jpg" title="Network Topology" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Homepage and Club Shop 
 </div>
+
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/cse370_3.jpg" title="Network Topology" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/cse370_4.jpg" title="Network Topology" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Searching and Sorting 
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
 
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/cse370_5.jpg" title="Network Topology" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/cse370_6.jpg" title="Network Topology" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Shopping cart and Order Details
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/cse370_7.jpg" title="Network Topology" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Admin View of Club Shop
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/cse370_8.jpg" title="Network Topology" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/cse370_9.jpg" title="Network Topology" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Board Members and Shop Staff Page
 </div>
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+You can find more about the project <a href="https://github.com/kazimdalwakil/Football-Club-Management-System_CSE370">here.</a>

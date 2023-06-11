@@ -1,0 +1,26 @@
+- title: 
+  type: time_table
+  contents:
+    - title: Undergraduate Teaching Assistant
+      institution: Department of CSE, BRAC University, Dhaka, Bangladesh
+      year: Jun 2022-Sept 2023
+      description:
+        - title: Courses
+          contents:
+            - "CSE110: Programming Language I"
+            - "CSE111: Programming Language II (Introduction to Object Oriented Programming)"
+    - title: Content Writer
+      institution: Course Platoon, Dhaka, Bangladesh
+      year: Jun 2020 - May 2021
+      description:
+        - Provided educational contents for all kinds of student
+        - Contributed in writing qualitative blog posts
+        - Researched on trending topics
+
+    - title: Content Writer
+      institution: Light Of Hope, Dhaka, Bangladesh
+      year: Aug 2017-Mar 2019
+      description:
+        - Explored methods to write a content in a interesting way
+        - Contributed in writing qualitative contents
+        - Researched on parent-child related topics 
