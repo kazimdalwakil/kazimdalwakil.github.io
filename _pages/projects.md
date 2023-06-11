@@ -1,7 +1,7 @@
 ---
 layout: page
 title: projects
-permalink: /projects/
+permalink: /Projects/
 description: All the projects that I have done can be found here.
 nav: true
 nav_order: 2
