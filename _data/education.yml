@@ -12,8 +12,9 @@
                 The main motive of this thesis is to create a system where emotions can be detected by processing brain activity (EEG signals). 
                 Make the best use of data we already have in order to create a prototype which can be used later on in a large scale. 
                 We will try to analyze which algorithm will work best, whether it's a traditional model or deep learning model.
-                Later on, it will recommend content effectively to stabilize a person's mood
-                by using hybrid Artificial Intelligence technology where contents from all over the internet will be analyzed by using multiple algorithms."
+                Later on, we implemented a recommendation system based on the fusion of two prevalent techniques, creating a hybrid recommendation system. 
+                Furthermore, concepts of Analytic Hierarchy Process (AHP) have been implemented to come up 
+                with an efficient algorithm which works in stabilizing an individual’s mood gradually."
 
     - title: Foundation Of Photography
       institution: Pathshala South Asian Media Institute, Dhaka, Bangladesh
@@ -29,14 +30,12 @@
       year: Aug 2016 - May 2018
       description:
         - "<b>Group: </b> Science"
-        - "<b>GPA: </b> 4.67 out of 5.00"
 
     - title: Secondary School Certificate (SSC)
       institution: Government Laboratory High School, Dhaka, Bangladesh
       year: Jan 2006 - Apr 2016
       description:
         - "<b>Group: </b> Science"
-        - "<b>GPA: </b> 5.00 out of 5.00"
 
 # - title: 
 #   type: time_table

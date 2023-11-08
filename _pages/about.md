@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Undergraduate Teaching Assistant, <a href='https://www.bracu.ac.bd/'>Brac University</a>
+subtitle: Software Engineer (Intern), <a href='https://www.mpower-social.com/'>mPower Social Enterprises Ltd.</a>
 
 profile:
   align: left
@@ -17,13 +17,15 @@ social: true  # includes social icons at the bottom of the page
 ---
 Hello, thank you for stopping by! 👋
 
-I am a passionate learner and researcher with a huge interest in Machine Learning, Artificial Intelligence, Deep Learning, Neural Network and Natural Language Processing. I am looking forward to working on similar research projects that match my interests. 
+I'm a dedicated learner and researcher with an insatiable curiosity for the realms of technology and creativity. My journey has been a tapestry woven with threads of machine learning, artificial intelligence, deep learning, neural networks, and natural language processing. These areas have always ignited my passion and continue to be my guiding stars.
 
-Currently working as Undergraduate Teaching Assistant in the department of Computer Science and Engineering and in my last semester of my undergraduate left with Thesis Defense. 
+Currently, I'm on an exciting journey as a Software Engineer Intern at mPower Social Enterprise Ltd, where I get the opportunity to harness my skills in JavaScript and Node.js to create innovative projects and collaborate with an outstanding team. This role allows me to apply my knowledge in real-world scenarios, where problem-solving and creativity intersect to bring solutions to life.
 
-I am doing research on Human Computer Interaction(HCI), working with the brain signals(EEG) to detect a person’s mood then to recommend suitable contents in order to improve the person’s mood. Concurrently doing a similar research to recommend music while driving. 
+Previously, I had the privilege of serving as an Undergraduate Teaching Assistant in the Department of Computer Science and Engineering for 1.5 years. During this time, I mentored and assisted fellow students, helping them navigate the intricacies of object-oriented programming while sharpening their analytical thinking abilities. It was a rewarding experience that further cemented my passion for both teaching and technology.
 
-Photography always fascinated me. That is why I like to tell stories through photography and have been doing it since 2013. I used to do all sorts of photography at first, but for a few years I have been doing <a href = 'https://www.instagram.com/kazimdalwakil_/'>street photography</a> only. I have done both basic and foundation photography courses from <a href = 'https://pathshalainstitute.org/'>Pathshala South Asian Media Institute</a>
+My journey extends beyond the classroom and office. Since 2013, I've been a storyteller through the lens of a camera, capturing the world through the art of photography. While I initially explored various photography genres, my heart found its home in <a href = 'https://www.instagram.com/kazimdalwakil_/'>street photography</a>, allowing me to capture the essence of life in its raw and unfiltered form. I've also honed my photographic skills by completing basic and foundation photography courses at <a href = 'https://pathshalainstitute.org/'>Pathshala South Asian Media Institute</a>
+
+But my truest passions lie in the worlds of machine learning, artificial intelligence, and natural language processing. I'm on a mission to contribute my research knowledge and skills to these fields, pushing the boundaries of what's possible. My ultimate desire is to collaborate with like-minded individuals who share the same fervour for research, innovation, and the pursuit of the extraordinary in these exhilarating domains.
 
 In my spare time I enjoy watching Animes or Series and Movies. I also enjoy traveling, reading books, writing and going out for a photowalk or just hanging out with friends and family. I follow club football and am a big fan of Barcelona and Messi. 
 
