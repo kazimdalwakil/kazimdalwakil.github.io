@@ -29,6 +29,7 @@ But my truest passions lie in the worlds of machine learning, artificial intelli
 
 In my spare time I enjoy watching Animes or Series and Movies. I also enjoy traveling, reading books, writing and going out for a photowalk or just hanging out with friends and family. I follow club football and am a big fan of Barcelona and Messi. 
 
+You can checkout the list of books that I have read as well as the list of movie, series and anime too.  
 * <a href = 'https://www.goodreads.com/review/list/120821892-kazi-md-al-wakil?shelf=read'>Read Books List</a>
 * <a href = 'https://www.imdb.com/user/ur67407421/lists?ref_=nv_usr_lst_3'>Watched Movies/Anime/Series List</a>
 

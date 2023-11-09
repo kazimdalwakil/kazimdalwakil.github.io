@@ -1,16 +1,25 @@
 - title: 
   type: time_table
   contents:
+    - title: Software Engineer Intern
+      institution: mPower Social Enterprises Ltd. <br\>Dhaka, Bangladesh
+      year: Oct 2023-Dec 2023
+      description:
+        - Worked as a backend developer
+        - Attained expertise in JavaScript, Node.js, and Git
+        - Contributed to numerous projects
+        - Collaborated effectively within a team setting
     - title: Undergraduate Teaching Assistant
-      institution: Department of CSE, BRAC University, Dhaka, Bangladesh
+      institution: Department of CSE, BRAC University <br\>Dhaka, Bangladesh
       year: Jun 2022-Sept 2023
       description:
-        - title: Courses
-          contents:
-            - "CSE110: Programming Language I"
-            - "CSE111: Programming Language II (Introduction to Object Oriented Programming)"
+        - Helped students with Object Oriented Programming Related Problems
+        - Assisted teachers in conducting the lab classes
+        - Evaluated assignments of the students
+        - Assisted students in developing and utilizing their analytical thinking skills.
+
     - title: Content Writer
-      institution: Course Platoon, Dhaka, Bangladesh
+      institution: Course Platoon <br\>Dhaka, Bangladesh
       year: Jun 2020 - May 2021
       description:
         - Provided educational contents for all kinds of student
@@ -18,7 +27,7 @@
         - Researched on trending topics
 
     - title: Content Writer
-      institution: Light Of Hope, Dhaka, Bangladesh
+      institution: Light Of Hope <br\>Dhaka, Bangladesh
       year: Aug 2017-Mar 2019
       description:
         - Explored methods to write a content in a interesting way
