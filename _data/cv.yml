@@ -3,8 +3,8 @@
   contents:
     - name: Full Name
       value: Kazi Md. Al-Wakil
-    - name: Date of Birth
-      value: 23rd December 2000
+    # - name: Date of Birth
+    #   value: 23rd December 2000
     - name: Languages
       value: Bengali (Native proficiency), English (Professional working proficiency), French (Elementary proficiency), Hindi (Elementary proficiency)
     - name: Email
@@ -26,6 +26,7 @@
     - title: Languages
       items: 
         - Java
+        - JavaScript
         - Python
         - Verilog
         - SQL
@@ -39,6 +40,9 @@
         - Overleaf
         - Git
         - VS code
+        - BitBucket
+        - Postman
+        - DBeaver
         - PyCharm
         - NetBeans
         - Notepad++
@@ -50,6 +54,8 @@
         - Google Suite
     - title: Frameworks & Libraries
       items: 
+        - Express
+        - NodeJs
         - Laravel
         - Pandas
         - NumPy
