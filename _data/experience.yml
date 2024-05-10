@@ -1,14 +1,24 @@
 - title: 
   type: time_table
   contents:
+
+
+    - title: Software Engineer 
+      institution: mPower Social Enterprises Ltd. <br\>Dhaka, Bangladesh
+      year: Mar 2024 - Present
+      description:
+        - Developed and maintained full-stack applications using Typescript, Node.js, and React.js within an agile team.
+        - Worked closely with design and product teams to translate wireframes and mockups into responsive, interactive features.
+        - Optimized components for maximum performance across devices and browsers.
+        - Collaborated effectively within a team setting
+
     - title: Software Engineer Intern
       institution: mPower Social Enterprises Ltd. <br\>Dhaka, Bangladesh
-      year: Oct 2023-Dec 2023
+      year: Oct 2023-Feb 2024
       description:
-        - Worked as a backend developer
-        - Attained expertise in JavaScript, Node.js, and Git
-        - Contributed to numerous projects
-        - Collaborated effectively within a team setting
+        - Collaborated with team members on technical solutions and troubleshooting issues.
+        - Participated in code reviews and contributed to overall code quality by maintaining best practices.
+        
     - title: Undergraduate Teaching Assistant
       institution: Department of CSE, BRAC University <br\>Dhaka, Bangladesh
       year: Jun 2022-Sept 2023
