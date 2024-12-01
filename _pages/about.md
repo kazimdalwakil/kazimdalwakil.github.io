@@ -20,7 +20,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 achievements: true
 social: true  # includes social icons at the bottom of the page
 ---
-Hi, I’m Kazi Md. Al-Wakil, currently a Lecturer at Northern University, Dhaka, Bangladesh, with a strong passion for research and innovation in Computer Science. My academic journey began with a Bachelor’s degree in CSE, and now, I am diving deeper into machine learning, artificial intelligence, and computer vision, focusing on impactful research to solve real-world problems.
+Assalamu Alaikum/Hello, I’m Kazi Md. Al-Wakil from Dhaka, Bangladesh, currently a Lecturer at Northern University Bangladesh (NUB),  with a strong passion for research and innovation in Computer Science. My academic journey began with a Bachelor’s degree in CS, and now, I am diving deeper into machine learning, artificial intelligence, and computer vision, focusing on impactful research to solve real-world problems.
 
 Previously, I served as a Software Engineer at mPower Social Enterprise Ltd, where I specialized in the MERN stack, and as an Undergraduate Teaching Assistant, guiding students in object-oriented programming. These roles have shaped my expertise in both teaching and industry-driven problem-solving.
 
