@@ -4,52 +4,33 @@ on:
     branches:
       - master
       - main
-  pull_request:
-    branches:
-      - master
-      - main
   workflow_dispatch:
-
 permissions:
   contents: write
-  pages: write
-  id-token: write
-
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout 🛎️
       uses: actions/checkout@v4
-
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.2.1'
         bundler-cache: true
-
+    - name: Prepare Jekyll Build
+      run: |
+        bundle remove wdm || true
+        bundle install
     - name: Install Dependencies 🔧
       run: |
         npm install -g mermaid.cli
         bundle install
-
     - name: Build Jekyll Site 🏗️
       run: bundle exec jekyll build
-
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: '_site'
-
-  deploy:
-    # Only deploy on push to master/main, not on pull requests
-    if: github.event_name != 'pull_request'
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
     - name: Deploy to GitHub Pages 🚀
-      id: deployment
-      uses: actions/deploy-pages@v4
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: _site  # Jekyll's default build output directory
+        branch: gh-pages  # Explicitly specify gh-pages branch
+        clean: true  # Remove previous files before deploying
