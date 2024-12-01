@@ -1,23 +1,23 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Kazi Md. Al-Wakil
+# - title: General Information
+#   type: map
+#   contents:
+    # - name: Full Name
+    #   value: Kazi Md. Al-Wakil
     # - name: Date of Birth
     #   value: 23rd December 2000
-    - name: Languages
-      value: Bengali (Native proficiency), English (Professional working proficiency)
-    - name: Email
-      value: kazimdalwakil@gmail.com
-    - name: Cell No.
-      value: '+8801303733627'
+    # - name: Languages
+    #   value: Bengali (Native proficiency), English (Professional working proficiency)
+    # - name: Email
+    #   value: kazimdalwakil@gmail.com
+    # - name: Cell No.
+    #   value: '+8801303733627'
 
 - title: Research Interests
   type: nested_list
   contents:
     - title: Natural Language Processing (NLP)
-    - title: Artificial Intelligence (AI)
-    - title: Deep Learning (DL)
+    - title: Computer Vision (CV)
+    - title: Medical Image Analysis
     - title: Computer Vision (CV)
 
 - title: Technical Skills
@@ -197,11 +197,10 @@
       description:
         -  <a href="https://drive.google.com/file/d/1HRUWm5hhhXL7izQ7foDUeFM2NcKVB20z/view?usp=sharing">Credential</a> 
 
-- title: Other Interestsss
-  type: list
-  contents:
-    - <b>Hobbies:</b> Photography, Reading Books, Playing Guitar, Videography, Playing Video Games
-    - <b>Favorite Football Club:</b> Barcelona
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <b>Hobbies:</b> Photography, Reading Books, Playing Guitar, Videography, Playing Video Games
 
 
 # - title: Open Source Projects

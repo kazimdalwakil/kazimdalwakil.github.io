@@ -9,7 +9,11 @@ layout: default
       {% if site.title == "blank" -%}<span class="font-weight">{{ site.first_name }}</span> {{ site.middle_name }} {{
       site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <strong>
+      <p class="desc"
+        style="color: #0205b8; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">{{
+        page.subtitle }}</p>
+    </strong>
   </header>
 
   <article>
@@ -66,14 +70,30 @@ layout: default
     <!-- xxxxxxxxxxxxxx Latest posts  xxxxxxxxxxxx------->
 
 
+
+
+    <!---------- Education --------------->
+    {%- if page.projects %}
+    <div id="education-section" class="post">
+      {% include education.html %}
+    </div>
+    {%- endif %}
+    <!-- xxxxxxxxxxxxxx Education section  xxxxxxxxxxxx------->
+
+    <!---------- Experience --------------->
+    {%- if page.projects %}
+    <div id="experience-section" class="post">
+      {% include experience.html %}
+    </div>
+    {%- endif %}
+    <!-- xxxxxxxxxxxxxx Exp section  xxxxxxxxxxxx------->
+
     <!---------- Selected papers--------------->
     {% if page.selected_papers -%}
     <!-- <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2> -->
-    <strong>
-      <h2>Publications</h2>
-    </strong>
-    {% include publishedPublications.html %}
-
+    <div id="publications-section" class="post">
+      {% include publishedPublications.html %}
+    </div>
 
     <!-- {%- include selected_papers.html %} -->
     <!-- I will do this once I have enough papers -->

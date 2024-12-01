@@ -1,14 +1,20 @@
 <div class="post">
-  <h7 class="sections">Section: v</h7>
-  <div class="dropdown-divider"></div>
-  <h2 class="post-title">Achievements</h2>
-  <article>
 
+  <header class="post-header">
+    <h7 class="sections">Section: ii</h7>
+    <div class="dropdown-divider"></div>
+    <h2 class="post-title">Experience {% if page.cv_pdf %}<a
+        href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer"
+        class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h2>
     <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
     <div class="cv">
-      {% for entry in site.data.achievements %}
+      {% for entry in site.data.experience %}
       <div>
-        <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+        <h3 class="card-title font-weight-medium">{{ entry.institution }}</h3>
+
         <div>
           {% if entry.type == "list" %}
           {% include cv/list.html %}
@@ -26,4 +32,5 @@
       {% endfor %}
     </div>
   </article>
+
 </div>

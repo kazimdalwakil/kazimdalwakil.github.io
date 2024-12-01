@@ -1,7 +1,7 @@
 ---
-layout: experience
+layout: about
 title: Experience
-permalink: /experience/
+permalink: /#experience-section
 description: 
 nav: true
 nav_order: 2

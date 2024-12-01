@@ -3,9 +3,18 @@
   contents:
 
 
+
+    - title: Lecturer 
+      institution: Northern University Bangladesh <br\>Dhaka, Bangladesh
+      year: Oct 2024 - Present
+      description:
+        - Deliver lectures on core computer science courses, including Computer Networks and Mathematical Analysis, to undergraduate students.
+        - Design and implement engaging course materials, including lectures, labs, and assignments, to facilitate hands-on learning and practical application of concepts.
+        - Engage in research activities to stay updated with advancements in technology, contributing to academic publications and professional development.
+
     - title: Software Engineer 
       institution: mPower Social Enterprises Ltd. <br\>Dhaka, Bangladesh
-      year: Mar 2024 - Present
+      year: Mar 2024 - Oct 2024
       description:
         - Developed and maintained full-stack applications using Typescript, Node.js, and React.js within an agile team.
         - Worked closely with design and product teams to translate wireframes and mockups into responsive, interactive features.

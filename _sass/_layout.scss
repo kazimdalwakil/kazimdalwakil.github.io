@@ -38,12 +38,26 @@ body.sticky-bottom-footer {
   }
 }
 
+.clearfix {
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+  /* This will clear the float and prevent the content from overlapping */
+}
+
+.items-time-table {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .post-title {
   font-size: 2em;
-  margin-top: 60px;
+  margin-top: 20px;
   /* Adds space above the title */
   padding-top: 10px;
   /* Extra space for better visibility */
+}
+
+.sections {
+  margin-top: 20px;
 }
 
 

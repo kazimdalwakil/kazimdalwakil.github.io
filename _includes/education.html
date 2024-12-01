@@ -1,12 +1,15 @@
 <div class="post">
-  <h7 class="sections">Section: v</h7>
-  <div class="dropdown-divider"></div>
-  <h2 class="post-title">Achievements</h2>
-  <article>
 
+  <header class="post-header">
+    <h7 class="sections">Section: i</h7>
+    <div class="dropdown-divider"></div>
+    <h2 class="post-title">Education</a></h2>
     <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
     <div class="cv">
-      {% for entry in site.data.achievements %}
+      {% for entry in site.data.education %}
       <div>
         <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
         <div>
@@ -26,4 +29,5 @@
       {% endfor %}
     </div>
   </article>
+
 </div>
