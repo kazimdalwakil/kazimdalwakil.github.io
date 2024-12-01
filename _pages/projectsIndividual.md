@@ -1,11 +1,8 @@
 ---
-layout: about
-title: Projects
-# permalink: /projects
-permalink: /#projects-section
+layout: page
+title: All Projects
+permalink: /projects
 description: All the projects that I have done can be found here.
-nav: true
-nav_order: 3
 display_categories: [Academic, Personal]
 horizontal: true
 ---
@@ -23,6 +20,7 @@ horizontal: true
   <div class="container">
     <div class="row">
     {%- for project in sorted_projects -%}
+    <div class="dropdown-divider"></div>
       {% include projects_horizontal.html %}
     {%- endfor %}
     </div>

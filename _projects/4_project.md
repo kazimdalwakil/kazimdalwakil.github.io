@@ -1,11 +1,16 @@
 ---
 layout: page
-title: Diabetes Classification Using ML
-description: Predict whether or not a patient has diabetes <br> May 2022 – Sept. 2022
-img: assets/img/cse422_0.jpg
+title: Diabetes Classification using Machine Learning
+authors: Kazi Md. Al-Wakil, Ahmed Lateef, Arman Zaman
+projectCategory: Artificial Intelligence course project
+description: This machine learning project aims to classify whether a person has diabetes based on a dataset sourced from Kaggle, originally provided by the National Institute of Diabetes and Digestive and Kidney Diseases. The dataset includes diagnostic measurements to predict the presence of diabetes. After pre-processing the data, it was split into 75% for training and 25% for testing. Three classification models were used to achieve the prediction- Decision Tree, Random Forest, and K-Neighbors Classifier. The project demonstrates the application of machine learning techniques in healthcare diagnostics.
+year: 2022
+img: assets/img/CSE422.gif
 redirect: 
 importance: 4
 category: Academic
+github: https://github.com/kazimdalwakil/Diabetic-Classification---CSE422-ML-Project
+show: true
 ---
 It is a simple Machine Learning project where I tried to classify if a person has Diabetes or not. I collected the dataset from Kaggle.
 

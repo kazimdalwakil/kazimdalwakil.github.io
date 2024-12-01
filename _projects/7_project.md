@@ -1,11 +1,16 @@
 ---
 layout: page
 title: High Security Car Parking System
-description: Arduino Based system (Hardware Specific) <br> May 2022 – Sept. 2022
-img: assets/img/cse360_0.jpg
+projectCategory: Computer Interfacing course project
+authors: Kazi Md. Al-Wakil, Kawshik Kumar Ghosh, Md. Radip Hassan, Md. Sakib Hossain 
+description: This project aims to enhance security in parking lots by ensuring that vehicles cannot be removed without valid authentication. Upon arrival, drivers must enroll their fingerprints, which are stored in a database linked to their vehicle ID. A 16x2 LCD display shows available parking slots and the parking lot's temperature, while a temperature and humidity sensor controls the activation of a heater if needed. The IR proximity sensor detects vehicle presence, and the servo motor opens the gate when there are empty slots. When leaving, the driver must authenticate via the fingerprint sensor. If the fingerprint matches the database, the gate opens, indicated by a green LED; otherwise, the driver is flagged. The system uses an Arduino Uno and various sensors for implementation.
+year: 2022
+img: assets/img/CSE360.gif
 redirect: 
 importance: 7
 category: Academic
+github: https://github.com/kazimdalwakil/Arduino-based-High-Security-Car-Parking-System_Lab-Project_CSE360
+show: true
 ---
 It is not new that vehicles get stolen from parking lots even though there are security guards.
 Therefore, We are intended to build a prototype where ensuring security will be our

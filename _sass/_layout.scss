@@ -7,7 +7,12 @@ body {
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     scroll-margin-top: 66px;
   }
 }
@@ -32,6 +37,236 @@ body.sticky-bottom-footer {
     width: 100%;
   }
 }
+
+.post-title {
+  font-size: 2em;
+  margin-top: 60px;
+  /* Adds space above the title */
+  padding-top: 10px;
+  /* Extra space for better visibility */
+}
+
+
+.publication-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.publication-content {
+  display: flex;
+  /* Flexbox to align image and text side by side */
+  flex-wrap: wrap;
+  /* Allow items to wrap on small screens */
+  align-items: flex-start;
+  /* Align items to the top */
+  margin-bottom: 2rem;
+}
+
+.publication-diagram {
+  width: 20%;
+  /* Adjust the width of the image */
+  margin-right: 20px;
+  /* Add space between the image and text */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.publication-text {
+  width: 75%;
+  /* Adjust width of text container */
+}
+
+.publication-title {
+  font-size: 1em;
+  font-weight: bold;
+  color: #004085;
+}
+
+.authors {
+  font-size: 0.9em;
+  color: #333;
+}
+
+.paper-info {
+  font-size: 0.9em;
+  color: #000000;
+}
+
+.paper-type {
+  font-weight: bold;
+  color: #177604;
+  /* Red for Champion */
+}
+
+.publication-description p {
+  line-height: 1.4;
+  font-size: 1em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+.supervisor-info {
+  margin-top: 8px;
+  color: #02337e;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.publication-links a {
+  color: #007bff;
+  /* Change to your preferred color */
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  /* Optional: removes underline */
+}
+
+
+.publication-links .paper-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.publication-links .paper-link:hover {
+  text-decoration: underline;
+}
+
+
+// ------------------------
+.project-flex-container {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  /* Adds space between image and text */
+}
+
+.project-flex-container-individual {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  margin-bottom: 30px;
+  /* Adds space between image and text */
+}
+
+.project-diagram {
+  width: 100%;
+  /* Adjust the width of the image */
+  margin-right: 20px;
+  /* Add space between the image and text */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  margin-bottom: 20px;
+  /* Adds some space between project entries */
+}
+
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* Space between projects */
+}
+
+.project-item {
+  display: flex;
+  flex-direction: row;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.project-image {
+  flex: 0 0 150px;
+  /* Adjust image width */
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 15px;
+  flex: 1;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.project-meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+.publication-links {
+  display: flex;
+  gap: 20px;
+  /* Adds space between the icons */
+  align-items: center;
+  /* Vertically centers the items if they have different heights */
+}
+
+.github-icon,
+.other-icon {
+  display: flex;
+  align-items: center;
+}
+
+.github-icon .icon,
+.other-icon .icon {
+  display: flex;
+  align-items: center;
+}
+
+.github-icon a,
+.other-icon a {
+  margin-left: 8px;
+  /* Adds space between the icon and the text */
+  text-decoration: none;
+  color: #007bff;
+  /* You can adjust the color */
+}
+
 
 // TODO: redefine content layout.
 

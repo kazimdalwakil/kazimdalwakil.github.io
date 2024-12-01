@@ -1,11 +1,16 @@
 ---
 layout: page
-title: Designing a 4-bit ALU
-description: A 4-bit ALU to perform 4 different operations <br> Sept. 2022 – Dec. 2022
-img: assets/img/cse460_0.jpg
+title: Design and Implementation of a 4-Bit ALU with Bit-Wise Operations Using Verilog
+projectCategory: VLSI Design course project
+authors: Kazi Md. Al-Wakil, Galib Hasan Mim, Sababa Rahman Meenm, Mashiat Hasana Rodoshi
+description: A 4-bit ALU was designed in Verilog to perform four bit-wise operations (X-NOR, SUB, NAND, ADD) on two 4-bit inputs, A and B, based on a 3-bit opcode. The ALU produces a 4-bit output, C, and three flags- carry, zero, and sign, indicating the result of the operation. The project was implemented using Quartus.
+year: 2022
+img: assets/img/CSE460.gif
 redirect: 
 importance: 3
 category: Academic
+github: https://github.com/kazimdalwakil/CSE460-Project
+show: true
 ---
 
 In this project I had to build a 4-Bit Alu that can perform 4 operations(X-NOR, SUB, NAND, ADD). The constraint was to code the project in such a way that operations are done bit-wise. 

@@ -1,40 +1,68 @@
-<div class="card-item col">
+<div class="card-item ">
   {%- if project.redirect -%}
-  <a href="{{ project.redirect }}">
   {%- else -%}
-  <a href="{{ project.url | relative_url }}">
+
   {%- endif -%}
-    <div class="card hoverable">
-      <div class="row g-0">
-        {%- if project.img -%}
-        <div class="card-img col-md-6">
-          {% include figure.html path=project.img alt="project thumbnail" %}
+  <div class="card hoverable">
+    <div class="project-flex-container-individual">
+
+      <div class="card-img col-md-2">
+        {% include figure.html path=project.img alt="project thumbnail" %}
+      </div>
+      <div class="publication-text col-md-10">
+        <a href="{{ project.url | relative_url }}">
+          <h2 class="publication-title">{{ project.title }}</h2>
+        </a>
+        <p class="authors">
+          {% assign authors_array = project.authors | split: ', ' %}
+          {% for author in authors_array %}
+          {% if author == "Kazi Md. Al-Wakil" %}
+          <strong>{{ author }}</strong>
+          {% else %}
+          {{ author }}
+          {% endif %}
+          {% if forloop.last == false %}, {% endif %}
+          {% endfor %}
+        </p>
+
+        <p class="paper-info">
+          <strong><em><span class="paper-type">{{ project.projectCategory }}</span></em>,
+            {{project.year}}</strong>
+        </p>
+        <div class="publication-description">
+          <p>
+            {{project.description}}
+          </p>
         </div>
-        <div class="col-md-6">
-        {%- else -%}
-        <div class="col-md-12">
-        {%- endif -%}
-          <div class="card-body">
-            <h3 class="card-title text-lowercase">{{ project.title }}</h3>
-            <p class="card-text">{{ project.description }}</p>
-            <div class="row ml-1 mr-1 p-0">
-              {%- if project.github -%}
-              <div class="github-icon">
-                <div class="icon" data-toggle="tooltip" title="Code Repository">
-                  <a href="{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
-                </div>
-                {%- if project.github_stars -%}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fas fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-                {%- endif -%}
-              </div>
-              {%- endif -%}
+        <div class="publication-links">
+          {%- if project.github -%}
+          <div class="github-icon">
+            <div class="icon" data-toggle="tooltip" title="Github">
+              <i class="fab fa-github gh-icon"></i><a href="{{project.github}}" target="_blank"> Github
+              </a>
             </div>
           </div>
+          {%- endif -%}
+
+          {%- if project.other -%}
+          {%- assign other_link = project.other | split: ", " -%}
+          {%- assign site_name = other_link[0] -%}
+          {%- assign site_url = other_link[1] -%}
+
+          <div class="other-icon">
+            <div class="icon" data-toggle="tooltip" title="{{ site_name }}">
+              {%- if site_name == "Google Sheet" -%}
+              <i class="fab fa-google-drive gh-icon"></i>
+              {%- elsif site_name == "Other" -%}
+              <i class="fab fa-external-link-alt gh-icon"></i>
+              {%- endif -%}
+              <a href="{{ site_url }}" target="_blank"> {{ site_name }} </a>
+            </div>
+          </div>
+          {%- endif -%}
         </div>
+
       </div>
     </div>
-  </a>
-</div>
+
+  </div>

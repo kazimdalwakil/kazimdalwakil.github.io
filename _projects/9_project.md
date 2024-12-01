@@ -1,10 +1,17 @@
 ---
 layout: page
-title: Prediction System
-description: Predicting every match's goal score and earn points <br> Nov. 2022 - Dec. 2022
+title: FIFA World Cup Match Prediction System
+projectCategory: Personal Project
+authors: Kazi Md. Al-Wakil, Mahmud Alam
+description: During the 2022 FIFA World Cup, a group of friends created a fun project to predict the score of every match before it began, adding excitement to the event. The system, implemented on Google Sheets, allowed participants to predict match outcomes based on certain criteria, earning points for accurate predictions. The person with the most points at the end of the tournament was crowned the winner. The project aimed to enhance the enjoyment of the World Cup while fostering friendly competition among participants.
+year: 2022
 img: assets/img/world_cup_1.jpg
-importance: 1
+redirect: 
+importance: 9
 category: Personal
+github: 
+other: Google Sheet, https://docs.google.com/spreadsheets/d/1_h6FIaXUb1Sf0cKMd9vulMpmw-LtWHxQVuND520jHUw/edit?usp=sharing
+show: false
 ---
 It was November of 2022. The biggest sport event of the world Fifa world cup has begun. Therefore, couple of our friends thought of this idea to predict the every match's score. It was purely for entertainment and for the sake of increasing the excitement of the world cup. 
 

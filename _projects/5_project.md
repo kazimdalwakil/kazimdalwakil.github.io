@@ -1,11 +1,16 @@
 ---
 layout: page
 title: Football Club Management System
-description: A database management system Project <br> Oct. 2021 – Jan. 2022
-img: assets/img/cse370_0.jpg
+projectCategory: Database Management System course project
+authors: Kazi Md. Al-Wakil, MD. Mustakin Alam, Md. Kausar Islam Bidhan, Ishraq Ahmed Esha, Sababa Rahman Meem
+description: This web application was developed for the Database Management System (CSE370) course at BRAC University to manage a football club's operations. The site offers two views- User View and Admin View. Users can purchase jerseys, merchandise, and other products from the club shop, with features like product search, price sorting, and access to their purchase history. Admins have the ability to add, update, and delete products, as well as manage players and board members in the database. Board members can log in as admins to inspect the website and view management details of the club shop. The project was built using HTML, CSS, PHP, and MySQL.
+year: 2022
+img: assets/img/CSE370.gif
 redirect: 
 importance: 5
 category: Academic
+github: https://github.com/kazimdalwakil/Football-Club-Management-System_CSE370
+show: true
 ---
 In this project we tried to build a website for the management of a football club. The website has two views, User view and Admin View. Users can buy jerseys, merchandise etc from the club shop. A lot of features are also available such as searching a product, sorting by price etc. Users can also see their purchase history. Admin of the website can update, add, delete a product from the club shop. He can also add, update and delete a player, board member from the database. 
 

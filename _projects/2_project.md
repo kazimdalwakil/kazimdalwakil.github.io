@@ -1,11 +1,16 @@
 ---
 layout: page
 title: Rent at BRACU
-description: Where you can rent anything at BRACU <br> Sept. 2022 – Dec. 2022
-img: assets/img/cse470_0.jpg
+projectCategory: Software Engineering course project
+authors: Kazi Md. Al-Wakil
+description: I have developed a full-stack web application where students, faculties, staff of BRAC University can Rent anything. It's not very uncommon for us to leave important things behind at home when we actually need it. For example, we might forget to take our calculator with us when we are having a math exam or we forget to take our charger but we need to charge our phone at university.In these cases, the website will be handy. Users can rent almost any necessary things from here.
+year: 2022
+img: assets/img/CSE470.gif
 redirect: 
 importance: 2
 category: Academic
+github: https://github.com/kazimdalwakil/rent-at-bracu
+show: true
 ---
 
 In this project I have developed a full-stack web application where students, faculties, staff of BRAC University can Rent anything. It's not very uncommon for us to leave important things behind at home when we actually need it. For example, we might forget to take our calculator with us when we are having a math exam or we forget to take our charger but we need to charge our phone at university.In these cases, the website will be handy. Users can rent almost any necessary things from here.

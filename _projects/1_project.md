@@ -1,12 +1,16 @@
 ---
 layout: page
-title: Computer Networking
-description: Building a whole network system from scratch <br> Feb. 2023 – April 2023
+title: Design and Implementation of an Optimized Computer Network with Redundant Routing and Server Integration
+projectCategory: Computer Networks course project
+authors: Kazi Md. Al-Wakil, Mustakin Alam, Sababa Rahman Meem, Galib Hasan Mim
+description: In this project we built a whole network for a given scenario. There were many constraints which we had to take into consideration. The main objective was to create a system where we can set up network by which we can communicate with the whole network given some constraints.
 year: 2023
-img: assets/img/cse421_1.jpg
+img: assets/img/CSE421.gif
 redirect: 
 importance: 1
 category: Academic
+github: https://github.com/kazimdalwakil/CSE421-Project.git
+show: true
 ---
 
 In this project we built a whole network for a given scenario. There were many constraints which we had to take into consideration. The main objective was to create a system where we can set up a network by which we can communicate with the whole network. Constraints that we had to take into consideration:

@@ -50,7 +50,7 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
 max_width: 800px
@@ -98,13 +98,13 @@ lastfm_id: # your lastfm id
 spotify_id: # your spotify id
 pinterest_id: # your pinterest id
 unsplash_id: # your unsplash id
-instagram_id: kazimdalwakil_ # your instagram id
+instagram_id: # your instagram id
 facebook_id: # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
-discord_id: 488429889112768513 # your discord id (18-digit unique numerical identifier)
+discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
-  Feel free to drop a line via email.
+  Connect With Me
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -173,6 +173,9 @@ collections:
   projects:
     output: true
     permalink: /Projects/:path/
+  publishedPublications:
+    output: true
+    permalink: /publishedPublications/:path/
 
 announcements:
   enabled: true

@@ -1,0 +1,74 @@
+<div>
+    <!-- In Proceddings -->
+    <strong>
+        <h4>Published</h4>
+    </strong>
+    {% assign sorted_publications = site.publishedPublications | sort: 'importance' %}
+    {% for publication in sorted_publications %}
+    {% if publication.show != false %}
+    <div class="publication-content">
+        <div class="dropdown-divider"></div>
+        <div class="project-flex-container">
+            <div class="col-md-3">
+                <img src="{{publication.img}}" alt="Project Diagram" class="project-diagram" />
+            </div>
+            <div class="publication-text col-md-10">
+
+                <h2 class="publication-title">{{ publication.title }}</h2>
+
+                <p class="authors">
+                    {% assign authors_array = publication.authors | split: ', ' %}
+                    {% for author in authors_array %}
+                    {% if author == "Kazi Md. Al-Wakil" %}
+                    <strong>{{ author }}</strong>
+                    {% else %}
+                    {{ author }}
+                    {% endif %}
+                    {% if forloop.last == false %}, {% endif %}
+                    {% endfor %}
+                </p>
+
+                <p class="paper-info">
+                    <strong><em><span class="paper-type">{{ publication.publisher }}</span></em>,
+                        {{publication.year}}</strong>
+                </p>
+                <div class="publication-description">
+                    <p>
+                        {{publication.description}}
+                    </p>
+                </div>
+                <div class="publication-links">
+                    {%- if publication.github -%}
+                    <div class="github-icon">
+                        <div class="icon" data-toggle="tooltip" title="Github">
+                            <i class="fab fa-github gh-icon"></i><a href="{{publication.github}}" target="_blank">
+                                Github
+                            </a>
+                        </div>
+                    </div>
+                    {%- endif -%}
+
+                    {%- if publication.other -%}
+                    {%- assign other_link = publication.other | split: ", " -%}
+                    {%- assign site_name = other_link[0] -%}
+                    {%- assign site_url = other_link[1] -%}
+
+                    <div class="other-icon">
+                        <div class="icon" data-toggle="tooltip" title="{{ site_name }}">
+                            {%- if site_name == "Google Sheet" -%}
+                            <i class="fab fa-google-drive gh-icon"></i>
+                            {%- elsif site_name == "Other" -%}
+                            <i class="fab fa-external-link-alt gh-icon"></i>
+                            {%- endif -%}
+                            <a href="{{ site_url }}" target="_blank"> {{ site_name }} </a>
+                        </div>
+                    </div>
+                    {%- endif -%}
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
