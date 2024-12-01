@@ -118,8 +118,26 @@ body.sticky-bottom-footer {
   max-width: 800px;
 }
 
+.profile {
+  margin-top: 120px;
+}
 .profile img {
   width: 100%;
+}
+
+.profile-header-right {
+  justify-content: center;
+}
+
+.img-circle {
+  width: 120px;
+  /* Adjust as needed */
+  height: 250px;
+  /* Equal to width for a square base */
+  border-radius: 60%;
+  /* Makes it circular */
+  object-fit: cover;
+  /* Prevents distortion */
 }
 
 .clearfix {
