@@ -9,15 +9,20 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
+  social: true
 
 news: false  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
-selected_papers: false # includes a list of papers marked as "selected={true}"
+education: true
+work_experience: true
+projects: true
+latest_posts: true  # includes a list of the newest posts
+selected_papers: true # includes a list of papers marked as "selected={true}"
+achievements: true
 social: true  # includes social icons at the bottom of the page
 ---
 Hello, thank you for stopping by! 👋
 
-I'm a dedicated learner and researcher with an insatiable curiosity for the realms of technology and creativity. My journey has been a tapestry woven with threads of machine learning, artificial intelligence, deep learning, computer Vision, and natural language processing. These areas have always ignited my passion and continue to be my guiding stars.
+I'm a dedicated learnersssss and researcher with an insatiable curiosity for the realms of technology and creativity. My journey has been a tapestry woven with threads of machine learning, artificial intelligence, deep learning, computer Vision, and natural language processing. These areas have always ignited my passion and continue to be my guiding stars.
 
 Currently, I'm on an exciting journey as a Software Engineer at mPower Social Enterprise Ltd, where  I specialize in MERN stack to drive innovation and collaborate on transformative projects with an exceptional team. This role fuels my passion for problem-solving and creativity, allowing me to apply my expertise to real-world challenges.
 
