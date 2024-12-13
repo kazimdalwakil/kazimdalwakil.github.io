@@ -1,7 +1,7 @@
 ---
 layout: about
 permalink: /#publications-section
-title: Publications
+title: Research Experience
 description: 
 years: 
 nav: true

@@ -10,7 +10,8 @@ img: assets/img/recommendationSystem.gif
 redirect: 
 importance: 1
 category: Academic
-github: https://github.com/kazimdalwakil/CSE421-Project.git
+github:
 scholar: 
+other: Slide, https://docs.google.com/spreadsheets/d/1_h6FIaXUb1Sf0cKMd9vulMpmw-LtWHxQVuND520jHUw/edit?usp=sharing
 show: true
 ---

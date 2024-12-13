@@ -5,12 +5,12 @@
         <h7 class="sections">Section: III</h7>
         <div class="dropdown-divider"></div>
 
-        <h2 class="post-title">Publications</h2>
+        <h2 class="post-title">Research Experience</h2>
         <p class="post-description">{{ page.description }}</p>
     </header>
-    <strong>
+    <!-- <strong>
         <h4>Published</h4>
-    </strong>
+    </strong> -->
     {% assign sorted_publications = site.publishedPublications | sort: 'importance' %}
     {% for publication in sorted_publications %}
     {% if publication.show != false %}
@@ -45,6 +45,11 @@
                         {{publication.description}}
                     </p>
                 </div>
+                <div class="supervisor-info">
+
+                    <strong>Supervisor(s):</strong> {{ publication.supervisors }}
+
+                </div>
                 <div class="publication-links">
                     {%- if publication.github -%}
                     <div class="github-icon">
@@ -63,11 +68,9 @@
 
                     <div class="other-icon">
                         <div class="icon" data-toggle="tooltip" title="{{ site_name }}">
-                            {%- if site_name == "Google Sheet" -%}
+
                             <i class="fab fa-google-drive gh-icon"></i>
-                            {%- elsif site_name == "Other" -%}
-                            <i class="fab fa-external-link-alt gh-icon"></i>
-                            {%- endif -%}
+
                             <a href="{{ site_url }}" target="_blank"> {{ site_name }} </a>
                         </div>
                     </div>

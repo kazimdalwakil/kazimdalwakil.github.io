@@ -11,7 +11,7 @@ importance: 9
 category: Personal
 github: 
 other: Google Sheet, https://docs.google.com/spreadsheets/d/1_h6FIaXUb1Sf0cKMd9vulMpmw-LtWHxQVuND520jHUw/edit?usp=sharing
-show: false
+show: true
 ---
 It was November of 2022. The biggest sport event of the world Fifa world cup has begun. Therefore, couple of our friends thought of this idea to predict the every match's score. It was purely for entertainment and for the sake of increasing the excitement of the world cup. 
 
