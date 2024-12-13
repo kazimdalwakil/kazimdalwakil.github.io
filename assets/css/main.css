@@ -226,8 +226,9 @@ body.sticky-bottom-footer {
 .supervisor-info {
   margin-top: 8px;
   color: #02337e;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .publication-links a {
