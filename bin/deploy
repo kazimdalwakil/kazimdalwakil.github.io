@@ -1,48 +1,25 @@
 #!/usr/bin/env bash
 
-# Run this script to deploy the app to Github Pages
-
-# Parse cmd arguments
-
 SRC_BRANCH="master"
 DEPLOY_BRANCH="gh-pages"
+DEPLOY_DIR="../deploy-tmp"
 
 USAGE_MSG="usage: deploy [-h|--help] [-u|--user] [-s|--src SRC_BRANCH] [-d|--deploy DEPLOY_BRANCH] [--verbose] [--no-push]"
 
 while [[ $# > 0 ]]; do
     key="$1"
-
     case $key in
-        -h|--help)
-        echo $USAGE_MSG
-        exit 0
-        ;;
-        -u|--user)
-        ;;
-        -s|--src)
-        SRC_BRANCH="$2"
-        shift
-        ;;
-        -d|--deploy)
-        DEPLOY_BRANCH="$2"
-        shift
-        ;;
-        --verbose)
-        set -x
-        ;;
-        --no-push)
-        NO_PUSH="--no-push"
-        ;;
-        *)
-        echo "Option $1 is unknown." >&2
-        echo $USAGE_MSG >&2
-        exit 1
-        ;;
+        -h|--help) echo $USAGE_MSG; exit 0 ;;
+        -u|--user) ;;
+        -s|--src) SRC_BRANCH="$2"; shift ;;
+        -d|--deploy) DEPLOY_BRANCH="$2"; shift ;;
+        --verbose) set -x ;;
+        --no-push) NO_PUSH="--no-push" ;;
+        *) echo "Option $1 is unknown." >&2; echo $USAGE_MSG >&2; exit 1 ;;
     esac
     shift
 done
 
-# Exit if any subcommand fails
 set -e
 
 echo "Deploying..."
@@ -50,67 +27,51 @@ echo "Source branch: $SRC_BRANCH"
 echo "Deploy branch: $DEPLOY_BRANCH"
 
 read -r -p "Do you want to proceed? [y/N] " response
-if [[ ! $response =~ ^([yY][eE][sS]|[yY])+$ ]]
-then
+if [[ ! $response =~ ^([yY][eE][sS]|[yY])+$ ]]; then
     echo "Aborting."
-    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
+    exit 1
 fi
 
-# Check if there are any uncommitted changes
 if ! git diff-index --quiet HEAD --; then
-    echo "Changes to the following files are uncommitted:"
+    echo "Uncommitted changes found. Please commit before proceeding."
     git diff-index --name-only HEAD --
-    echo "Please commit the changes before proceeding."
-    echo "Aborting."
-    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
+    exit 1
 fi
 
-# Check if there are any untracked files
 if ! test -z "$(git ls-files --exclude-standard --others)"; then
-    echo "There are untracked files:"
+    echo "Untracked files found. Please commit or stash before proceeding."
     git ls-files --exclude-standard --others
-    echo "Please commit those files or stash them before proceeding."
-    echo "Aborting."
-    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
+    exit 1
 fi
 
-# Switch to source branch (creates it if necessary from the current branch)
-if [ `git branch | grep $SRC_BRANCH | tr ' ' '\n' | tail -1` ]
-then
-    git checkout $SRC_BRANCH
-else
-    git checkout -b $SRC_BRANCH
-fi
-
-# Checkout DEPLOY_BRANCH branch
-if [ `git branch | grep $DEPLOY_BRANCH` ]
-then
-  git branch -D $DEPLOY_BRANCH
-fi
-git checkout -b $DEPLOY_BRANCH
-
-# Export JEKYLL_ENV=production
-export JEKYLL_ENV=production
-
-# Build site
-bundle exec jekyll build --lsi
-
-# Delete and move files
-find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name 'CNAME' ! -name '.gitignore' -exec rm -rf {} \;
-mv _site/* .
-rm -R _site/
-
-# Create `.nojekyll` file (bypass GitHub Pages Jekyll processing)
-touch .nojekyll
-
-# Push to DEPLOY_BRANCH
-git add -fA
-git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
-[[ ${NO_PUSH} ]] || git push -f -q origin $DEPLOY_BRANCH
-
-# Move back to SRC_BRANCH
 git checkout $SRC_BRANCH
 
-echo "Deployed successfully!"
+export JEKYLL_ENV=production
+bundle exec jekyll build --lsi
 
+# Prepare a clean deploy directory (outside the repo working tree)
+rm -rf "$DEPLOY_DIR"
+mkdir -p "$DEPLOY_DIR"
+cp -r _site/* "$DEPLOY_DIR"
+touch "$DEPLOY_DIR/.nojekyll"
+
+# Set up deploy branch in a separate worktree so master is never touched
+git worktree remove --force gh-pages-worktree 2>/dev/null || true
+git branch -D $DEPLOY_BRANCH 2>/dev/null || true
+git worktree add -B $DEPLOY_BRANCH gh-pages-worktree $SRC_BRANCH
+
+rm -rf gh-pages-worktree/*
+cp -r "$DEPLOY_DIR"/* gh-pages-worktree/
+cp "$DEPLOY_DIR/.nojekyll" gh-pages-worktree/
+
+cd gh-pages-worktree
+git add -fA
+git commit --allow-empty -m "$(git -C .. log -1 --pretty=%B) [ci skip]"
+[[ ${NO_PUSH} ]] || git push -f -q origin $DEPLOY_BRANCH
+cd ..
+
+git worktree remove --force gh-pages-worktree
+rm -rf "$DEPLOY_DIR"
+
+echo "Deployed successfully!"
 exit 0

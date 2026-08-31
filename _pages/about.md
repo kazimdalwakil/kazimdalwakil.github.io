@@ -24,4 +24,4 @@ Hi, I'm Kazi Md. Al-Wakil, currently a Lecturer at Northern University Banglades
 
 Before moving into research, I worked as a Software Engineer at mPower Social Enterprise Ltd on the MERN stack, and later as an Undergraduate Teaching Assistant for object oriented programming.
 
-I'm currently looking for fully funded PhD positions**, and I'm open to collaborating on research projects. Feel free to reach out if any of this overlaps with what you're working on.
+I'm currently looking for fully funded PhD positions, and I'm open to collaborating on research projects. Feel free to reach out if any of this overlaps with what you're working on.
