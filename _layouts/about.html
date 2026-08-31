@@ -7,6 +7,7 @@ layout: default
 
 
   <article>
+
     {% if page.profile -%}
     <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
       {%- if page.profile.image %}
@@ -43,7 +44,7 @@ layout: default
     {%- endif %}
 
     <div class="clearfix">
-      <div>
+      <div class="about-header">
         <header class="post-header">
 
           <h1 class="post-title">
@@ -68,7 +69,7 @@ layout: default
 
     <!---------- News --------------->
     {% if page.news and site.announcements.enabled -%}
-    <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
+    <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News & Updates</a></h2>
     {%- include news.html limit=true %}
     {%- endif %}
     <!-- xxxxxxxxxxxxxx News  xxxxxxxxxxxx------->
@@ -80,24 +81,6 @@ layout: default
     {%- endif %}
     <!-- xxxxxxxxxxxxxx Latest posts  xxxxxxxxxxxx------->
 
-
-
-
-    <!---------- Education --------------->
-    {%- if page.projects %}
-    <div id="education-section" class="post">
-      {% include education.html %}
-    </div>
-    {%- endif %}
-    <!-- xxxxxxxxxxxxxx Education section  xxxxxxxxxxxx------->
-
-    <!---------- Experience --------------->
-    {%- if page.projects %}
-    <div id="experience-section" class="post">
-      {% include experience.html %}
-    </div>
-    {%- endif %}
-    <!-- xxxxxxxxxxxxxx Exp section  xxxxxxxxxxxx------->
 
     <!---------- Selected papers--------------->
     {% if page.selected_papers -%}
@@ -111,14 +94,32 @@ layout: default
     {%- endif %}
     <!-- xxxxxxxxxxxxxx Selected papers  xxxxxxxxxxxx------->
 
-    <!---------- Project section--------------->
+
+
+    <!---------- Experience --------------->
     {%- if page.projects %}
+    <div id="experience-section" class="post">
+      {% include experience.html %}
+    </div>
+    {%- endif %}
+    <!-- xxxxxxxxxxxxxx Exp section  xxxxxxxxxxxx------->
+
+    <!---------- Education --------------->
+    {%- if page.projects %}
+    <div id="education-section" class="post">
+      {% include education.html %}
+    </div>
+    {%- endif %}
+    <!-- xxxxxxxxxxxxxx Education section  xxxxxxxxxxxx------->
+
+    <!---------- Project section--------------->
+    <!-- {%- if page.projects %}
     <div id="projects-section" class="post">
 
 
       {% include projectsInAbout.html %}
     </div>
-    {%- endif %}
+    {%- endif %} -->
 
 
     <!-- xxxxxxxxxxxxxx Project section  xxxxxxxxxxxx------->

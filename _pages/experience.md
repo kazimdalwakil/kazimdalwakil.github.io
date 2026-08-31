@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Experience
+title: Work Experience
 permalink: /#experience-section
 description: 
 nav: true

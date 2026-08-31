@@ -15,10 +15,10 @@
 - title: Research Interests
   type: nested_list
   contents:
-    - title: Natural Language Processing (NLP)
+    - title: Multimodal AI
     - title: Computer Vision (CV)
     - title: Medical Image Analysis
-    - title: Computer Vision (CV)
+    - title: Trustworthy AI
 
 - title: Technical Skills
   type: nested_list

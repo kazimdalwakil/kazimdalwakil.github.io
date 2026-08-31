@@ -5,13 +5,13 @@ publisher:  Undergraduate Thesis
 year: 2023
 authors: Kazi Md. Al-Wakil, Rifai Rahman, Nafisa Nawal, Sababa Rahman Meem, Sajid Rashid
 supervisors: Dr. Md. Golam Rabiul Alam, Rafeed Rahman
-description: We propose a system to enhance mental well-being by recommending “Feel Good” YouTube videos. Using the SEED Dataset (EEG signals and eye movements), we applied CNN and LSTM models, with CNN achieving 93.01% accuracy in mood detection. For recommendations, we combined text-based emotion analysis, Pearson Correlation for viewer ratings, and the Analytic Hierarchy Process (AHP) to refine mood-stabilizing algorithms. This system detects emotional states and boosts well-being through targeted content, offering a practical tool for emotional health improvement.
+# description: A system designed to enhance mental well-being by recommending "Feel Good" YouTube videos. Using the SEED Dataset (EEG signals and eye movements), CNN and LSTM models are applied, with CNN achieving 93.01% accuracy in mood detection. Text-based emotion analysis, Pearson Correlation for viewer ratings, and the Analytic Hierarchy Process (AHP) are combined to refine mood-stabilizing algorithms — detecting emotional states and boosting well-being through targeted content recommendations.
 img: assets/img/undergrad_thesis.gif
 redirect: 
-importance: 2
+importance: 4
 category: Academic
 github:
 scholar: 
-other: 
+other: Paper, https://library.bracu.ac.bd/vufind/Record/10361-22797/Similar
 show: true
 ---

@@ -5,7 +5,7 @@ title: Research Experience
 description: 
 years: 
 nav: true
-nav_order: 3
+nav_order: 1
 ---
 <!-- _pages/publications.md -->
 <!-- <div class="publications">

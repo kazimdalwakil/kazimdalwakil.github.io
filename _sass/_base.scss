@@ -121,9 +121,17 @@ blockquote {
 }
 
 // Profile
-
 .profile {
   width: 100%;
+  background-color: #fbf5f3;
+  border-radius: 20px;
+  padding: 24px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  img {
+    border-radius: 12px;
+  }
 
   .address {
     margin-bottom: 5px;
@@ -157,30 +165,16 @@ blockquote {
   }
 }
 
-.post-description {
-  margin-bottom: 2rem;
-  font-size: 0.9rem;
-  margin-bottom: 3rem;
-
-  a {
-    color: inherit;
-
-    &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
-    }
-  }
-}
-
-
 // Navbar customization
 
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
+  background-color: #303431;
+  /* Ash color */
   opacity: 0.95;
 }
+
 
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -220,7 +214,9 @@ blockquote {
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    // color: var(--global-text-color);
+    color: #ffffff;
+    font-weight: bolder;
 
     &:hover {
       color: var(--global-hover-color);
@@ -230,7 +226,8 @@ blockquote {
   .navbar-nav .nav-item.active>.nav-link {
     background-color: inherit;
     font-weight: bolder;
-    color: var(--global-theme-color);
+    // color: var(--global-theme-color);#000000;
+    color: #ffffff;
 
     &:hover {
       color: var(--global-hover-color);
@@ -328,13 +325,18 @@ blockquote {
         }
       }
     }
+
+    a:not(:last-child)::after {
+      content: "|";
+      margin-left: 8px;
+      color: var(--global-text-color);
+    }
   }
 
   .contact-note {
     font-size: 0.8rem;
   }
 }
-
 
 // Footer
 footer.fixed-bottom {

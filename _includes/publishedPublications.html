@@ -2,7 +2,6 @@
     <!-- In Proceddings -->
 
     <header class="post-header">
-        <h7 class="sections">Section: III</h7>
         <div class="dropdown-divider"></div>
 
         <h2 class="post-title">Research Experience</h2>
@@ -69,9 +68,12 @@
                     <div class="other-icon">
                         <div class="icon" data-toggle="tooltip" title="{{ site_name }}">
 
-                            <i class="fab fa-google-drive gh-icon"></i>
-
-                            <a href="{{ site_url }}" target="_blank"> {{ site_name }} </a>
+                            <div class="other-icon">
+                                <div class="icon" data-toggle="tooltip" title="{{ site_name }}">
+                                    <i class="fas fa-link gh-icon" style="font-size: 0.75em;"> Link(s):</i>
+                                    <a href="{{ site_url }}" target="_blank"> {{ site_name }} </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {%- endif -%}

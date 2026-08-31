@@ -1,8 +1,8 @@
 ---
 layout: about
 title: Projects
-# permalink: /projects
-permalink: /#projects-section
+permalink: /projects
+# permalink: /#projects-section
 description: All the projects that I have done can be found here.
 nav: true
 nav_order: 4
