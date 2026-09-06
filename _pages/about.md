@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Learner| Researcher | Lecturer
+subtitle: Learner | Researcher | Lecturer
 
 profile:
   align: left

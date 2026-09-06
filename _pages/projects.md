@@ -4,8 +4,8 @@ title: Projects
 permalink: /projects
 # permalink: /#projects-section
 description: All the projects that I have done can be found here.
-nav: true
-nav_order: 4
+nav: false
+nav_order: 
 display_categories: [Academic, Personal]
 horizontal: true
 ---

@@ -177,6 +177,40 @@ body.sticky-bottom-footer {
   gap: 10px;
   /* Adds space between image and text */
 }
+@media (max-width: 575px) {
+  .project-flex-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .project-flex-container .col-md-3,
+  .project-flex-container .publication-text {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .project-flex-container .project-diagram {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+}
+
+.project-flex-container-individual {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.project-diagram {
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 .project-flex-container-individual {
   display: flex;
