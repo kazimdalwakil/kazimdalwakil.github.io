@@ -3,7 +3,8 @@
   contents:
     - title: MSc in Computer Science - Enterprise Software Systems (Level 9)
       institution: South East Technological University, Waterford, Ireland
-      year: Sept 2025 – Sept 2026
+      year: Sept 2025 - Sept 2026
+      image: /assets/img/SETU.jpg
       description:
         - "Ranked among the top two students in the MSc cohort (current standing, August 2026)."
         - "Expected Award: First Class Honours."
@@ -17,6 +18,7 @@
     - title: Bachelor of Science in Computer Science
       institution: BRAC University, Dhaka, Bangladesh
       year: May 2019 - Sept 2023
+      image: /assets/img/bracu_logo.png
       description:
         - "<b>CGPA: </b> 3.98 out of 4.00"
         - "Top 3 in class"

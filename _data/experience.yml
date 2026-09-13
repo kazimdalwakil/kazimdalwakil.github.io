@@ -7,6 +7,7 @@
     - title: Lecturer 
       institution: Northern University Bangladesh <br\>Dhaka, Bangladesh
       year: Oct 2024 - Present
+      image: /assets/img/nub_logo.png
       description:
         - Courses Taught
           - Computer Networks
@@ -20,6 +21,7 @@
     - title: Software Engineer 
       institution: mPower Social Enterprises Ltd. <br\>Dhaka, Bangladesh
       year: Oct 2023 - Oct 2024
+      image: /assets/img/mpower_logo.jpg
       description:
         - Developed and maintained full-stack applications using Typescript, Node.js, and React.js within an agile team.
         - Worked closely with design and product teams to translate wireframes and mockups into responsive, interactive features.
@@ -36,6 +38,7 @@
     - title: Undergraduate Teaching Assistant
       institution: Department of CSE, BRAC University <br\>Dhaka, Bangladesh
       year: Jun 2022-Sept 2023
+      image: /assets/img/bracu_logo.png
       description:
         - Helped students with Object Oriented Programming Related Problems
         - Assisted teachers in conducting the lab classes
