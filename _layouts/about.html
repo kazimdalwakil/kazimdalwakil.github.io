@@ -94,7 +94,13 @@ layout: default
     {%- endif %}
     <!-- xxxxxxxxxxxxxx Selected papers  xxxxxxxxxxxx------->
 
-
+    <!---------- Education --------------->
+    {%- if page.projects %}
+    <div id="education-section" class="post">
+      {% include education.html %}
+    </div>
+    {%- endif %}
+    <!-- xxxxxxxxxxxxxx Education section  xxxxxxxxxxxx------->
 
     <!---------- Experience --------------->
     {%- if page.projects %}
@@ -104,13 +110,7 @@ layout: default
     {%- endif %}
     <!-- xxxxxxxxxxxxxx Exp section  xxxxxxxxxxxx------->
 
-    <!---------- Education --------------->
-    {%- if page.projects %}
-    <div id="education-section" class="post">
-      {% include education.html %}
-    </div>
-    {%- endif %}
-    <!-- xxxxxxxxxxxxxx Education section  xxxxxxxxxxxx------->
+
 
     <!---------- Project section--------------->
     <!-- {%- if page.projects %}

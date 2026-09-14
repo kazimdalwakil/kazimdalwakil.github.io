@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started MSc classes at SETU.
+Started MSc classes at **South East Technological University**, Waterford, Ireland.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Received Best Technical Presentation of the Session award at ICCIT'24.
+Received **Best Technical Presentation of the Session** award at **ICCIT'24**.

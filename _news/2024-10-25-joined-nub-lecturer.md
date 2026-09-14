@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined Northern University Bangladesh as a Lecturer in the Department of CSE.
+Joined **Northern University Bangladesh** as a **Lecturer** in the Department of CSE.

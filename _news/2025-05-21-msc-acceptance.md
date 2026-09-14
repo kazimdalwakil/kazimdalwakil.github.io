@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Accepted into the MSc programme at South East Technological University, Waterford, Ireland.
+Accepted into the MSc programme at **South East Technological University**, Waterford, Ireland.

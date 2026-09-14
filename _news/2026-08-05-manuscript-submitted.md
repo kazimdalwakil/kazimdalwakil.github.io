@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Manuscript submitted to Informatics in Medicine Unlocked, currently under review.
+Manuscript submitted to **Informatics in Medicine Unlocked**, currently under review.

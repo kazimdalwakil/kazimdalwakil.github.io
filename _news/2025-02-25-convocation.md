@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attended the 16th Undergraduate Convocation at BRAC University.
+Attended the **16th** Undergraduate Convocation at BRAC University.

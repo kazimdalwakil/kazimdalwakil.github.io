@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined mPower Social Enterprises Ltd. as a Software Engineer.
+Joined **mPower Social Enterprises Ltd.** as a **Software Engineer**.

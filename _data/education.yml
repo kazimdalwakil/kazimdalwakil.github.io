@@ -1,6 +1,13 @@
 - title: 
   type: time_table
   contents:
+    - title: Ph.D. in Computer Science
+      institution: Technological University Dublin, Ireland
+      year: Oct 2026 - Present
+      image: /assets/img/tud_logo.png
+      description:
+        - "Supervisor: Dr. Susan McKeever."
+
     - title: MSc in Computer Science - Enterprise Software Systems (Level 9)
       institution: South East Technological University, Waterford, Ireland
       year: Sept 2025 - Sept 2026

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated from BRAC University with Highest Distinction.
+Graduated from BRAC University with **Highest Distinction**.
